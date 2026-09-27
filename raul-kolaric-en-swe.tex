@@ -1,0 +1,73 @@
+% Compile with pdflatex raul-kolaric-en-swe.tex (or tectonic).
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.45in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\pagestyle{empty}
+\linespread{0.95}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=1.3em,itemsep=1pt,parsep=0pt,topsep=2pt}
+\newcommand{\ressection}[1]{\par\vspace{6pt}{\large\bfseries #1}\par\vspace{2pt}\hrule\vspace{3pt}}
+\newcommand{\role}[4]{\textbf{#1}\hfill #2\par\textbf{#3}\hfill #4\par}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries RAUL KOLARIC}\\[3pt]
+{\small São Paulo, Brazil $\bullet$
+\href{mailto:rlkolaric@gmail.com}{\underline{rlkolaric@gmail.com}} $\bullet$
+\href{tel:+5511993462745}{\underline{+55 11 99346-2745}} $\bullet$
+\href{https://www.linkedin.com/in/raulkolaric/}{\underline{LinkedIn}} $\bullet$
+\href{https://github.com/raulkolaric}{\underline{GitHub}} $\bullet$
+\href{https://rkolaric.com/}{\underline{Portfolio}}}
+\end{center}
+\vspace{-7pt}
+\ressection{Experience}
+\role{Microsoft}{São Paulo, Brazil}{Business Program Management Intern}{September 2026 -- Present}
+\begin{itemize}
+\item Support business and technical initiatives through data analysis, workflow optimization, and AI-enabled solutions.
+\end{itemize}
+\vspace{3pt}
+\role{\href{https://upp.com.br/}{Up.p}}{São Paulo, Brazil}{Product Management Intern}{May 2026 -- July 2026}
+\begin{itemize}
+\item Prototyped the Employer Portal for payroll-deducted loans and wrote technical specifications translating business requirements into features for the development team.
+\item Automated internal operational workflows to reduce manual work and improve team productivity.
+\item Maintained the company's WordPress website, implementing performance optimizations and content updates.
+\end{itemize}
+\vspace{3pt}
+\role{\href{https://mapari.app/}{Mapari}}{São Paulo, Brazil}{Cofounder \& Full Stack Developer}{January 2024 -- February 2026}
+\begin{itemize}
+\item Built an administrative dashboard with Next.js, React, and TypeScript to visualize real-time data from over 80,000 daily requests for a São Paulo nightlife application.
+\item Designed and implemented a normalized PostgreSQL database in Supabase, defining table relationships and data integrity constraints for millions of monthly requests.
+\item Developed REST API endpoints in Next.js and TypeScript and implemented a responsive landing page from Figma designs using reusable React components.
+\item Implemented AWS infrastructure with EC2 cron jobs for scheduled tasks and S3 for file storage.
+\end{itemize}
+\ressection{Projects}
+\textbf{\href{https://github.com/raulkolaric/backup-teams}{Backup Teams}} $\bullet$ Python, FastAPI, PostgreSQL, AWS, Docker
+\begin{itemize}
+\item Built an asynchronous pipeline to archive Microsoft Teams course files through Microsoft Graph, stream downloads into S3, and store file metadata and extracted PDF text in PostgreSQL on AWS RDS.
+\item Implemented PostgreSQL full-text search with GIN indexes and contextual paragraph results, incremental backups using file eTags, and REST endpoints with presigned S3 download URLs.
+\item Containerized the API and automated deployment to EC2 through GitHub Actions; managed database schema changes with Alembic migrations.
+\end{itemize}
+\vspace{3pt}
+\textbf{\href{https://github.com/raulkolaric/ics-parse}{ICS Parse}} $\bullet$ Python, Document Processing, LLM APIs
+\begin{itemize}
+\item Built a CLI that converts university teaching-plan PDFs and timetable images into CSV and ICS calendar events using an OpenAI-compatible text and vision API.
+\item Implemented date estimation from class schedules, holiday and campus-specific calendar handling, and cached document processing with review records for ambiguous calendar entries.
+\end{itemize}
+\ressection{Education}
+\textbf{B.S. in Computer Science} -- Pontifical Catholic University of São Paulo\hfill 2025 -- 2028
+\begin{itemize}
+\item \textbf{Relevant Activities:} Director, PUC Tech League; Member, PUC-SP Competitive Programming Team; key member of the organizing committee for PUC-SP\textquotesingle s academic week, coordinating the schedule of key university presentations.
+\end{itemize}
+\ressection{Technical Skills}
+\textbf{Spoken Languages:} Portuguese (Native), English (Fluent, C1), Spanish (Intermediate).\\
+\textbf{Languages:} TypeScript, JavaScript, Python, C, HTML/CSS.\\
+\textbf{Frameworks \& Web:} Next.js, React, TailwindCSS, FastAPI, REST APIs.\\
+\textbf{Data \& AI:} Pandas, Scikit-learn, Matplotlib, BeautifulSoup.\\
+\textbf{Automation \& DevOps:} Playwright, Docker, AWS (S3, EC2, RDS), Git/GitHub, Linux.\\
+\textbf{Databases:} PostgreSQL, Supabase, Relational Modeling (SQL)\\
+\textbf{Tools:} Figma, Agile (Scrum).
+\end{document}
